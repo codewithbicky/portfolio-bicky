@@ -1,81 +1,111 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Page</title>
+<title>I'm Bicky - Portfolio</title>
 
 <style>
 body{
-  font-family:Arial;
+  font-family:Arial, sans-serif;
+  margin:0;
   background:#0f172a;
+  color:white;
 }
 
-.box{
-  background:white;
-  width:300px;
-  padding:30px;
-  margin:100px auto;
+.container{
   text-align:center;
+  padding:50px 20px;
+}
+
+.name{
+  font-size:55px;
+  font-family:cursive;
+  color:#38bdf8;
+  text-shadow:2px 2px 10px #000;
+  letter-spacing:3px;
+}
+
+.subtitle{
+  font-size:20px;
+}
+
+.card{
+  background:white;
+  color:black;
+  max-width:600px;
+  margin:20px auto;
+  padding:25px;
   border-radius:15px;
 }
 
-input{
-  width:90%;
-  padding:10px;
-  margin:10px;
+h2{
+  color:#0f172a;
 }
 
-button{
-  padding:10px 30px;
-  background:#38bdf8;
-  color:white;
-  border:none;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h2>Login</h2>
+<h1 class="name">𝓘'𝓶 𝓑𝓲𝓬𝓴𝔂</h1>
 
-<input type="text" placeholder="Username">
-
-<input type="password" placeholder="Password">
-  
-<button onclick="login()">Login</button>
+<p class="subtitle">
+Computer Science Student | Future Software Developer
+</p>
 
 
+<div class="card">
+<h2>About Me</h2>
+<p>
+Hello, I'm Bicky. I am a Computer Science student.
+I love coding, technology and learning new skills.
+</p>
 </div>
 
 
-<script>
-function login(){
- let username = document.querySelector("input[type='text']").value;
- let password = document.querySelector("input[type='password']").value;
+<div class="card">
+<h2>My Skills</h2>
+<p>
+HTML & CSS<br>
+Python Programming<br>
+C++ Programming<br>
+Cloud Computing<br>
+Artificial Intelligence<br>
+Cyber Security Basics
+</p>
+</div>
 
- if(username != "" && password != ""){
-   window.location.href="index.html";
- }
- else{
-   alert("Username aur Password bharo");
- }
-}
-</script>
-  <script>
-function login(){
- let username = document.querySelector("input[type='text']").value;
- let password = document.querySelector("input[type='password']").value;
 
- if(username != "" && password != ""){
-   window.location.href="index.html";
- }
- else{
-   alert("Username aur Password bharo");
- }
-}
-  </script>
+<div class="card">
+<h2>My Projects</h2>
+<p>
+Portfolio Website<br>
+AI Based Projects<br>
+Cyber Security Projects
+</p>
+</div>
+
+
+<div class="card">
+<h2>Certificates</h2>
+<p>
+Cloud Computing Certificate<br>
+Generative AI with AWS Certificate
+</p>
+</div>
+
+
+<div class="card">
+<h2>Contact</h2>
+<p>📧 Gmail: subirpandasubirpanda@gmail.com</p>
+<p>📱 Phone: +91 9861613924</p>
+</div>
+
+
+</div>
 
 </body>
 </html>
