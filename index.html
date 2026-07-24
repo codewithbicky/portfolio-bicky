@@ -1,14 +1,18 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>I'm Bicky - Portfolio</title>
 
 <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
   font-family:Arial, sans-serif;
-  margin:0;
-  background:#0f172a;
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
   color:white;
 }
 
@@ -18,28 +22,49 @@ body{
 }
 
 .name{
-  font-size:55px;
+  font-size:60px;
   font-family:cursive;
   color:#38bdf8;
-  text-shadow:2px 2px 10px #000;
-  letter-spacing:3px;
+  text-shadow:0 0 20px #38bdf8;
 }
 
 .subtitle{
   font-size:20px;
+  margin:15px;
 }
 
 .card{
-  background:white;
-  color:black;
-  max-width:600px;
-  margin:20px auto;
-  padding:25px;
-  border-radius:15px;
+  background:rgba(255,255,255,0.95);
+  color:#111827;
+  max-width:650px;
+  margin:25px auto;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
 }
 
 h2{
-  color:#0f172a;
+  color:#2563eb;
+  margin-bottom:15px;
+}
+
+.skill{
+  display:inline-block;
+  background:#38bdf8;
+  color:white;
+  padding:8px 15px;
+  margin:5px;
+  border-radius:20px;
+}
+
+.contact{
+  background:#111827;
+  color:white;
 }
 
 </style>
@@ -58,50 +83,56 @@ Computer Science Student | Future Software Developer
 
 
 <div class="card">
-<h2>About Me</h2>
+<h2>👨‍💻 About Me</h2>
 <p>
 Hello, I'm Bicky. I am a Computer Science student.
-I love coding, technology and learning new skills.
+I love coding, technology and creating projects.
 </p>
 </div>
 
 
 <div class="card">
-<h2>My Skills</h2>
+<h2>🚀 My Skills</h2>
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">Python</span>
+<span class="skill">C++</span>
+<span class="skill">Cloud</span>
+<span class="skill">AI</span>
+
+</div>
+
+
+<div class="card">
+<h2>💡 My Projects</h2>
 <p>
-HTML & CSS<br>
-Python Programming<br>
-C++ Programming<br>
-Cloud Computing<br>
-Artificial Intelligence<br>
-Cyber Security Basics
+🌐 Portfolio Website<br><br>
+🤖 AI Projects<br><br>
+🔐 Cyber Security Projects
 </p>
 </div>
 
 
 <div class="card">
-<h2>My Projects</h2>
+<h2>🏆 Certificates</h2>
 <p>
-Portfolio Website<br>
-AI Based Projects<br>
-Cyber Security Projects
+☁ Cloud Computing<br><br>
+🤖 Generative AI with AWS
 </p>
 </div>
 
 
-<div class="card">
-<h2>Certificates</h2>
+<div class="card contact">
+<h2>📞 Contact</h2>
 <p>
-Cloud Computing Certificate<br>
-Generative AI with AWS Certificate
+📧 subirpandasubirpanda@gmail.com
 </p>
-</div>
 
+<p>
+📱 +91 9861613924
+</p>
 
-<div class="card">
-<h2>Contact</h2>
-<p>📧 Gmail: subirpandasubirpanda@gmail.com</p>
-<p>📱 Phone: +91 9861613924</p>
 </div>
 
 
