@@ -1,70 +1,105 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>I'm Bicky - Portfolio</title>
+<title>Hii,I'm Subir</title>
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:linear-gradient(135deg,#0f172a,#1e3a8a);
-  color:white;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+scroll-behavior:smooth;
 }
 
 .container{
-  text-align:center;
-  padding:50px 20px;
+width:90%;
+max-width:900px;
+margin:auto;
+text-align:center;
+padding:40px 0;
 }
 
 .name{
-  font-size:60px;
-  font-family:cursive;
-  color:#38bdf8;
-  text-shadow:0 0 20px #38bdf8;
+font-size:50px;
+animation:fade 2s ease-in-out;
+}
+
+.name span{
+color:#38bdf8;
 }
 
 .subtitle{
-  font-size:20px;
-  margin:15px;
+margin-top:10px;
+animation:slide 2s;
 }
 
 .card{
-  background:rgba(255,255,255,0.95);
-  color:#111827;
-  max-width:650px;
-  margin:25px auto;
-  padding:30px;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
+background:white;
+color:#111;
+margin:20px 0;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+animation:up 1.5s;
 }
 
 h2{
-  color:#2563eb;
-  margin-bottom:15px;
+color:#2563eb;
+margin-bottom:15px;
 }
 
-.skill{
-  display:inline-block;
-  background:#38bdf8;
-  color:white;
-  padding:8px 15px;
-  margin:5px;
-  border-radius:20px;
+.skills span{
+display:inline-block;
+background:#38bdf8;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
 }
 
 .contact{
-  background:#111827;
-  color:white;
+background:#111827;
+color:white;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(0.5);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+@keyframes slide{
+from{
+transform:translateY(-30px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+@keyframes up{
+from{
+transform:translateY(50px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
 }
 
 </style>
@@ -75,7 +110,7 @@ h2{
 
 <div class="container">
 
-<h1 class="name">𝓘'𝓶 𝓑𝓲𝓬𝓴𝔂</h1>
+<h1 class="name">I'm <span>Bicky</span></h1>
 
 <p class="subtitle">
 Computer Science Student | Future Software Developer
@@ -83,56 +118,50 @@ Computer Science Student | Future Software Developer
 
 
 <div class="card">
-<h2>👨‍💻 About Me</h2>
+<h2>About Me</h2>
 <p>
-Hello, I'm Bicky. I am a Computer Science student.
-I love coding, technology and creating projects.
+I am a Computer Science student passionate about coding,
+technology, AI and software development.
 </p>
 </div>
 
 
 <div class="card">
-<h2>🚀 My Skills</h2>
-
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">Python</span>
-<span class="skill">C++</span>
-<span class="skill">Cloud</span>
-<span class="skill">AI</span>
-
+<h2>Skills</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>Python</span>
+<span>C++</span>
+<span>AI</span>
+<span>Cloud</span>
+</div>
 </div>
 
 
 <div class="card">
-<h2>💡 My Projects</h2>
+<h2>Projects</h2>
 <p>
-🌐 Portfolio Website<br><br>
-🤖 AI Projects<br><br>
-🔐 Cyber Security Projects
+Portfolio Website<br>
+AI Projects<br>
+Cyber Security Projects
 </p>
 </div>
 
 
 <div class="card">
-<h2>🏆 Certificates</h2>
+<h2>Certificates</h2>
 <p>
-☁ Cloud Computing<br><br>
-🤖 Generative AI with AWS
+Cloud Computing<br>
+Generative AI with AWS
 </p>
 </div>
 
 
 <div class="card contact">
-<h2>📞 Contact</h2>
-<p>
-📧 subirpandasubirpanda@gmail.com
-</p>
-
-<p>
-📱 +91 9861613924
-</p>
-
+<h2>Contact</h2>
+<p>📧 subirpandasubirpanda@gmail.com</p>
+<p>📱 +91 9861613924</p>
 </div>
 
 
