@@ -1,102 +1,76 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Bicky Portfolio 🚀</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bicky Portfolio</title>
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-  scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial,sans-serif;
 }
 
 body{
-  background:#000;
-  color:white;
+    background:linear-gradient(135deg,#ff69b4,#ff1493,#ffb6c1);
+    color:white;
 }
 
-/* Background */
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
 .hero{
-  height:100vh;
-  background:
-  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
-  url("https://wallpapercave.com/wp/wp2757874.jpg");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.box{
-  animation:show 2s;
+    width:100%;
 }
 
 h1{
-  font-size:45px;
-  color:#00ffff;
+    font-size:60px;
+    white-space:nowrap;
+    text-shadow:0 0 20px white;
+    position:relative;
+    animation:moveName 6s linear infinite;
+}
+
+@keyframes moveName{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left:100%;
+    }
 }
 
 p{
-  font-size:20px;
-  margin:15px;
+    text-align:center;
+    font-size:22px;
+    margin-top:30px;
 }
 
 .btn{
-  padding:12px 30px;
-  background:#00ffff;
-  color:black;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
+    display:block;
+    width:220px;
+    margin:35px auto;
+    padding:14px;
+    text-align:center;
+    background:white;
+    color:#ff1493;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-/* Sections */
-
-section{
-  min-height:100vh;
-  padding:50px 20px;
-  text-align:center;
-}
-
-.card{
-  background:rgba(255,255,255,.1);
-  margin:20px auto;
-  padding:25px;
-  max-width:600px;
-  border-radius:20px;
-  backdrop-filter:blur(10px);
-  animation:up 1.5s;
-}
-
-h2{
-  color:#00ffff;
-  font-size:35px;
-  margin-bottom:20px;
-}
-
-
-@keyframes show{
-from{
-opacity:0;
-transform:translateY(-50px);
-}
-to{
-opacity:1;
-}
-}
-
-@keyframes up{
-from{
-opacity:0;
-transform:translateY(50px);
-}
-to{
-opacity:1;
-}
+.btn:hover{
+    transform:scale(1.08);
 }
 
 </style>
@@ -104,103 +78,100 @@ opacity:1;
 
 <body>
 
+<header>
+
 <div class="hero">
-<div class="box">
 
 <h1>🔥 Bicky 🚀</h1>
 
-<p>
-Computer Science Student 💻<br>
-Future Software Developer 🤖
-</p>
+<p>💖 Welcome To My Portfolio 💖</p>
 
-<a class="btn" href="#about">
-Explore 👇
-</a>
+<a href="#about" class="btn">⬇ Scroll Down ⬇</a>
 
 </div>
-</div>
 
-
+</header>
 <section id="about">
+  <h2 style="text-align:center;font-size:40px;margin-top:30px;">👤 About Me</h2>
 
-<h2>About Me 👤</h2>
-
-<div class="card">
+<div style="width:90%;max-width:800px;margin:30px auto;background:rgba(255,255,255,.2);padding:25px;border-radius:20px;text-align:center;backdrop-filter:blur(10px);">
+<h3>Hi, I'm Bicky 👋</h3>
 <p>
-Hello 👋<br>
-I am Bicky, a Computer Science student.
-I love Coding 💻, AI 🤖 and Cyber Security 🛡️.
+💻 Computer Science Student<br><br>
+❤️ Passionate about Coding, AI, Web Development & Cyber Security.
 </p>
 </div>
 
 </section>
 
+<section id="skills">
 
+<h2 style="text-align:center;font-size:40px;">💻 Skills</h2>
 
-<section>
+<div style="width:90%;max-width:800px;margin:30px auto;background:rgba(255,255,255,.2);padding:25px;border-radius:20px;text-align:center;line-height:2;backdrop-filter:blur(10px);">
 
-<h2>Skills ⚡</h2>
-
-<div class="card">
-<p>
 🐍 Python<br>
-💻 C / C++<br>
-🌐 Web Development<br>
-🛡️ Ethical Hacking<br>
-🤖 Artificial Intelligence
-</p>
+💻 C Programming<br>
+⚡ C++<br>
+🌐 HTML & CSS<br>
+🤖 Artificial Intelligence<br>
+🛡️ Cyber Security
+
 </div>
 
 </section>
 
+<section id="projects">
 
+<h2 style="text-align:center;font-size:40px;">🚀 Projects</h2>
 
-<section>
+<div style="width:90%;max-width:800px;margin:30px auto;background:rgba(255,255,255,.2);padding:25px;border-radius:20px;text-align:center;line-height:2;backdrop-filter:blur(10px);">
 
-<h2>Projects 🚀</h2>
-
-<div class="card">
-<p>
-🔥 Portfolio Website<br>
+🌐 Portfolio Website<br>
 🤖 AI Projects<br>
 🛡️ Cyber Security Labs
-</p>
+
 </div>
 
 </section>
 
+<section id="certificates">
 
+<h2 style="text-align:center;font-size:40px;">🏆 Certificates</h2>
 
-<section>
+<div style="width:90%;max-width:800px;margin:30px auto;background:rgba(255,255,255,.2);padding:25px;border-radius:20px;text-align:center;line-height:2;backdrop-filter:blur(10px);">
 
-<h2>Certificates 🏆</h2>
+☁️ Cloud Computing Certificate ✅<br>
+🤖 Generative AI with AWS Certificate ✅<br>
+🛡️ Cyber Security Training Certificate ✅
 
-<div class="card">
-<p>
-☁️ Cloud Computing Certificate<br>
-🤖 Generative AI with AWS<br>
-🛡️ Cyber Security Training
-</p>
+</div>
+
+</section>
+  <section id="contact">
+
+<h2 style="text-align:center;font-size:40px;margin-top:40px;">📞 Contact Me</h2>
+
+<div style="width:90%;max-width:800px;margin:30px auto;background:rgba(255,255,255,.2);padding:25px;border-radius:20px;text-align:center;backdrop-filter:blur(10px);line-height:2;">
+
+<h3>👋 Let's Connect</h3>
+
+<p>📱 Phone: <a href="tel:+919861613924" style="color:white;text-decoration:none;">+91 9861613924</a></p>
+
+<p>📧 Gmail: <a href="mailto:subirpandasubirpanda@gmail.com" style="color:white;text-decoration:none;">subirpandasubirpanda@gmail.com</a></p>
+
+<p>📍 Odisha, India 🇮🇳</p>
+
+<p>💖 Thank You For Visiting My Portfolio 💖</p>
+
 </div>
 
 </section>
 
-
-
-<section>
-
-<h2>Contact 📩</h2>
-
-<div class="card">
-<p>
-Let's Connect 🤝<br>
-❤️ Thank You For Visiting
-</p>
-</div>
-
-</section>
-
+<footer style="text-align:center;padding:20px;margin-top:40px;background:rgba(255,255,255,.15);">
+<h3>🔥 Bicky 🚀</h3>
+<p>Made with ❤️ using HTML & CSS</p>
+</footer>
 
 </body>
 </html>
