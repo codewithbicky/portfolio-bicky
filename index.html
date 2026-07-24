@@ -1,122 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bicky | Portfolio</title>
+<title>Login Page</title>
 
 <style>
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
-text-align:center;
+  font-family:Arial;
+  background:#0f172a;
 }
 
-header{
-background:#1e293b;
-padding:40px;
+.box{
+  background:white;
+  width:300px;
+  padding:30px;
+  margin:100px auto;
+  text-align:center;
+  border-radius:15px;
 }
 
-h1{
-font-size:42px;
-margin:10px;
-}
-
-p{
-font-size:18px;
-}
-
-section{
-padding:40px 20px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-margin:20px auto;
-max-width:700px;
-border-radius:15px;
+input{
+  width:90%;
+  padding:10px;
+  margin:10px;
 }
 
 button{
-padding:12px 25px;
-font-size:18px;
-border:none;
-border-radius:8px;
-background:#38bdf8;
-color:white;
-cursor:pointer;
-}
-
-footer{
-background:#111827;
-padding:20px;
-margin-top:30px;
+  padding:10px 30px;
+  background:#38bdf8;
+  color:white;
+  border:none;
 }
 </style>
+
 </head>
 
 <body>
-  <body>
-    <a href="login.html">
-<button>Login</button>
-    </a>
 
+<div class="box">
 
+<h2>Login</h2>
 
-<header>
-<h1>Hi, I'm Bicky 👋</h1>
-<p>Computer Science Student | Future Software Developer</p>
-<button>Hire Me</button>
-</header>
+<input type="text" placeholder="Username">
 
-<header>
-<h1>Hi, I'm Bicky 👋</h1>
-<p>Computer Science Student | Future Software Developer</p>
-<button>Hire Me</button>
-</header>
+<input type="password" placeholder="Password">
 
-<section>
-<div class="card">
-<h2>About Me</h2>
-<p>
-I am a Computer Science student passionate about programming,
-web development, AI, and cybersecurity.
-I love learning new technologies and building creative projects.
-</p>
+<button onclick="login()">Login</button>
+
 </div>
 
-<div class="card">
-<h2>Skills</h2>
-<p>HTML • CSS • Python • C • C++ • Java • Git • GitHub</p>
-</div>
 
-<div class="card">
-<h2>Projects</h2>
-<p>Portfolio Website</p>
-<p>AI Projects</p>
-<p>Cyber Security Projects</p>
-</div>
+<script>
+function login(){
+ let username = document.querySelector("input[type='text']").value;
+ let password = document.querySelector("input[type='password']").value;
 
-<div class="card">
-<h2>Certificates</h2>
-<p>Cloud Computing</p>
-<p>Generative AI with AWS</p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: subirpandasubirpanda@gmail.com</p>
-<p>GitHub: github.com/bicky</p>
-</div>
-
-</section>
-
-<footer>
-© 2026 Bicky | All Rights Reserved
-</footer>
+ if(username != "" && password != ""){
+   window.location.href="index.html";
+ }
+ else{
+   alert("Username aur Password bharo");
+ }
+}
+</script>
 
 </body>
 </html>
