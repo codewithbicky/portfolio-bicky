@@ -1,58 +1,64 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hii,I'm Subir</title>
+<title>Bicky Portfolio</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f172a,#2563eb);
+background:#0f172a;
 color:white;
-scroll-behavior:smooth;
 }
 
-.container{
-width:90%;
-max-width:900px;
-margin:auto;
+nav{
+position:sticky;
+top:0;
+background:#111827;
+padding:15px;
 text-align:center;
-padding:40px 0;
 }
 
-.name{
-font-size:50px;
-animation:fade 2s ease-in-out;
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
 }
 
-.name span{
+nav a:hover{
 color:#38bdf8;
 }
 
-.subtitle{
-margin-top:10px;
-animation:slide 2s;
+section{
+padding:50px 20px;
+text-align:center;
+}
+
+.home h1{
+font-size:55px;
+animation:zoom 1.5s;
+}
+
+.home span{
+color:#38bdf8;
 }
 
 .card{
 background:white;
 color:#111;
-margin:20px 0;
+max-width:700px;
+margin:20px auto;
 padding:25px;
 border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
-animation:up 1.5s;
-}
-
-h2{
-color:#2563eb;
-margin-bottom:15px;
+animation:up 1s;
 }
 
 .skills span{
@@ -64,15 +70,16 @@ border-radius:20px;
 margin:5px;
 }
 
-.contact{
+footer{
+text-align:center;
+padding:20px;
 background:#111827;
-color:white;
 }
 
-@keyframes fade{
+@keyframes zoom{
 from{
 opacity:0;
-transform:scale(0.5);
+transform:scale(.5);
 }
 to{
 opacity:1;
@@ -80,25 +87,14 @@ transform:scale(1);
 }
 }
 
-@keyframes slide{
-from{
-transform:translateY(-30px);
-opacity:0;
-}
-to{
-transform:translateY(0);
-opacity:1;
-}
-}
-
 @keyframes up{
 from{
-transform:translateY(50px);
 opacity:0;
+transform:translateY(50px);
 }
 to{
-transform:translateY(0);
 opacity:1;
+transform:translateY(0);
 }
 }
 
@@ -108,26 +104,34 @@ opacity:1;
 
 <body>
 
-<div class="container">
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<h1 class="name">I'm <span>Bicky</span></h1>
 
-<p class="subtitle">
-Computer Science Student | Future Software Developer
-</p>
+<section id="home" class="home">
+<h1>I'm <span>Bicky</span></h1>
+<p>Computer Science Student | Future Software Developer</p>
+</section>
 
 
+<section id="about">
 <div class="card">
 <h2>About Me</h2>
 <p>
-I am a Computer Science student passionate about coding,
-technology, AI and software development.
+Hello, I'm Bicky. I am a Computer Science student passionate about coding, AI and technology.
 </p>
 </div>
+</section>
 
 
+<section id="skills">
 <div class="card">
-<h2>Skills</h2>
+<h2>My Skills</h2>
 <div class="skills">
 <span>HTML</span>
 <span>CSS</span>
@@ -137,35 +141,34 @@ technology, AI and software development.
 <span>Cloud</span>
 </div>
 </div>
+</section>
 
 
+<section id="projects">
 <div class="card">
-<h2>Projects</h2>
+<h2>My Projects</h2>
 <p>
-Portfolio Website<br>
-AI Projects<br>
-Cyber Security Projects
+🌐 Portfolio Website<br><br>
+🤖 AI Projects<br><br>
+🔐 Cyber Security Projects
 </p>
 </div>
+</section>
 
 
+<section id="contact">
 <div class="card">
-<h2>Certificates</h2>
-<p>
-Cloud Computing<br>
-Generative AI with AWS
-</p>
-</div>
-
-
-<div class="card contact">
 <h2>Contact</h2>
 <p>📧 subirpandasubirpanda@gmail.com</p>
 <p>📱 +91 9861613924</p>
 </div>
+</section>
 
 
-</div>
+<footer>
+<p>© 2026 Bicky Portfolio</p>
+</footer>
+
 
 </body>
 </html>
