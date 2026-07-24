@@ -43,8 +43,9 @@ button{
 <input type="text" placeholder="Username">
 
 <input type="password" placeholder="Password">
-
+  
 <button onclick="login()">Login</button>
+
 
 </div>
 
@@ -62,6 +63,19 @@ function login(){
  }
 }
 </script>
+  <script>
+function login(){
+ let username = document.querySelector("input[type='text']").value;
+ let password = document.querySelector("input[type='password']").value;
+
+ if(username != "" && password != ""){
+   window.location.href="index.html";
+ }
+ else{
+   alert("Username aur Password bharo");
+ }
+}
+  </script>
 
 </body>
 </html>
