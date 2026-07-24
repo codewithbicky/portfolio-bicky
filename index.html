@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bicky Portfolio</title>
+<title>Bicky Portfolio 🚀</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
+  background:#000;
+  color:white;
 }
 
-nav{
-position:sticky;
-top:0;
-background:#111827;
-padding:15px;
-text-align:center;
+/* Background */
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+  url("https://wallpapercave.com/wp/wp2757874.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-weight:bold;
+.box{
+  animation:show 2s;
 }
 
-nav a:hover{
-color:#38bdf8;
+h1{
+  font-size:45px;
+  color:#00ffff;
 }
+
+p{
+  font-size:20px;
+  margin:15px;
+}
+
+.btn{
+  padding:12px 30px;
+  background:#00ffff;
+  color:black;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* Sections */
 
 section{
-padding:50px 20px;
-text-align:center;
-}
-
-.home h1{
-font-size:55px;
-animation:zoom 1.5s;
-}
-
-.home span{
-color:#38bdf8;
+  min-height:100vh;
+  padding:50px 20px;
+  text-align:center;
 }
 
 .card{
-background:white;
-color:#111;
-max-width:700px;
-margin:20px auto;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-animation:up 1s;
+  background:rgba(255,255,255,.1);
+  margin:20px auto;
+  padding:25px;
+  max-width:600px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  animation:up 1.5s;
 }
 
-.skills span{
-display:inline-block;
-background:#38bdf8;
-color:white;
-padding:8px 15px;
-border-radius:20px;
-margin:5px;
+h2{
+  color:#00ffff;
+  font-size:35px;
+  margin-bottom:20px;
 }
 
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-}
 
-@keyframes zoom{
+@keyframes show{
 from{
 opacity:0;
-transform:scale(.5);
+transform:translateY(-50px);
 }
 to{
 opacity:1;
-transform:scale(1);
 }
 }
 
@@ -94,80 +96,110 @@ transform:translateY(50px);
 }
 to{
 opacity:1;
-transform:translateY(0);
 }
 }
 
 </style>
-
 </head>
 
 <body>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+<div class="hero">
+<div class="box">
 
+<h1>🔥 Bicky 🚀</h1>
 
-<section id="home" class="home">
-<h1>I'm <span>Bicky</span></h1>
-<p>Computer Science Student | Future Software Developer</p>
-</section>
+<p>
+Computer Science Student 💻<br>
+Future Software Developer 🤖
+</p>
+
+<a class="btn" href="#about">
+Explore 👇
+</a>
+
+</div>
+</div>
 
 
 <section id="about">
+
+<h2>About Me 👤</h2>
+
 <div class="card">
-<h2>About Me</h2>
 <p>
-Hello, I'm Bicky. I am a Computer Science student passionate about coding, AI and technology.
+Hello 👋<br>
+I am Bicky, a Computer Science student.
+I love Coding 💻, AI 🤖 and Cyber Security 🛡️.
 </p>
 </div>
+
 </section>
 
 
-<section id="skills">
-<div class="card">
-<h2>My Skills</h2>
-<div class="skills">
-<span>HTML</span>
-<span>CSS</span>
-<span>Python</span>
-<span>C++</span>
-<span>AI</span>
-<span>Cloud</span>
-</div>
-</div>
-</section>
 
+<section>
 
-<section id="projects">
+<h2>Skills ⚡</h2>
+
 <div class="card">
-<h2>My Projects</h2>
 <p>
-🌐 Portfolio Website<br><br>
-🤖 AI Projects<br><br>
-🔐 Cyber Security Projects
+🐍 Python<br>
+💻 C / C++<br>
+🌐 Web Development<br>
+🛡️ Ethical Hacking<br>
+🤖 Artificial Intelligence
 </p>
 </div>
+
 </section>
 
 
-<section id="contact">
+
+<section>
+
+<h2>Projects 🚀</h2>
+
 <div class="card">
-<h2>Contact</h2>
-<p>📧 subirpandasubirpanda@gmail.com</p>
-<p>📱 +91 9861613924</p>
+<p>
+🔥 Portfolio Website<br>
+🤖 AI Projects<br>
+🛡️ Cyber Security Labs
+</p>
 </div>
+
 </section>
 
 
-<footer>
-<p>© 2026 Bicky Portfolio</p>
-</footer>
+
+<section>
+
+<h2>Certificates 🏆</h2>
+
+<div class="card">
+<p>
+☁️ Cloud Computing Certificate<br>
+🤖 Generative AI with AWS<br>
+🛡️ Cyber Security Training
+</p>
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Contact 📩</h2>
+
+<div class="card">
+<p>
+Let's Connect 🤝<br>
+❤️ Thank You For Visiting
+</p>
+</div>
+
+</section>
 
 
 </body>
